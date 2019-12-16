@@ -29,7 +29,7 @@ public class FactSheet {
             }
         }
 
-        //хорошая погода
+        //good weather
         for (int i = 0; i < streckenabschnittAnzahl; i++) {
             for (int j = 0; j < zeitintervallAnzahl; j++) {
                 int passagiereAnzahl = (int)(Math.random()*10000-5000);
@@ -37,7 +37,7 @@ public class FactSheet {
             }
         }
 
-        // плохая погода
+        //  bad weather
         for (int i = 0; i < streckenabschnittAnzahl; i++) {
             for (int j = 0; j < zeitintervallAnzahl; j++) {
                 int passagiereAnzahl = (int)(Math.random()*10000);
