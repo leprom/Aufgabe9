@@ -8,11 +8,8 @@ public class FactSheet {
     Weather weather;
     //LinkedList<FactSheet> oldFactSheets;
     FactSheet lastYear;
-    /**
-     * Как минимум 5000 пассажиров есть всегда, при любой погоде
-     * При хорошей может быть около 0
-     * При плохой
-     */
+   
+    
     public FactSheet() {
         int streckenabschnittAnzahl = 1000;
         int zeitintervallAnzahl = 24;
@@ -84,56 +81,5 @@ public class FactSheet {
         System.out.println(factSheet2.weather);
         System.out.println(factSheet3.weather);
     }
-    /*
-    Objekt stellt generierte Fakten zu Passagierzahlen
-und der Wetterlage zur Weihnachtszeit aus vergangenen Jahren
-bereit.
-
-Verkettet in einer linearen Liste, wobei jeder Eintrag (neben den Daten eines Jahres) ein Objekt
-vom Typ FactSheet für Daten früherer Jahre enthält.
-
-Fakten sind nur über interne Iteratoren
-abfragbar, deren Details auf verschiedene Weise gestaltbar sind.
-     */
-
-
-    /*
-
-    ХРАНИТЬ В LINKELIST
-
-    Variablen:
-    кол-во пассажиров
-    год
-    погода
-
-Конструктор
-    • X vom Typ DemandMatrix mit Zufallszahlen, die eine Weihnachtszeit
-mit Durchschnittswetter beschreiben;
-• Y1 und Y2 vom Typ DiffMatrix mit Zufallszahlen, die Abweichungen
-zu X bei Schönwetter (Y1) und Schlechtwetter (Y2)
-beschreiben;
-отклонениями к X в хорошую погоду (Y1) и плохую погоду (Y2)
-
-• Z vom Typ DiffMatrix mit Zufallszahlen (in einem gegenüber
-Y1 und Y2 deutlich kleineren Wertebereich), die jährliche
-Trendverschiebungen bei den Passagierzahlen darstellen.
-со случайными числами (в значительно меньшем диапазоне значений, чем Y1 и Y2),
-которые представляют годовые сдвиги трендов в количестве пассажиров.
-
-После случайного выбора погоды конструктор без параметров из X, Y1 и Y2 генерирует факты для первого рассматриваемого
-года, которые доступны извне через внутренние итераторы. Дополнительный конструктор расширяет существующие данные за
-предыдущие годы на новый год, посредством чего данные за предыдущие годы (объект FactSheet) и погода для нового года
-передаются в качестве параметров. Данные из X и Z за предыдущий год добавляются элемент за элементом и немного
-изменяются путем добавления случайных чисел (из небольшого диапазона значений); это дает X на новый год. Y1, Y2 и Z
-с предыдущего года также принимаются в новом году с небольшим изменением путем добавления случайных чисел.
-Наконец, факты за новый год основаны на X, Y1 и Y2 в зависимости от погоды.
-
-
-    Такой объект предоставляет сгенерированные факты о количестве пассажиров и
-    погодной ситуации во время Рождества за предыдущие годы, связанные в линейный список,
-    причем каждая запись (в дополнение к данным за год) содержит объект типа FactSheet для
-    данных за предыдущие годы. Факты могут быть запрошены только через внутренние итераторы,
-    детали которых могут быть разработаны по-разному. Конструктор без параметров генерирует следующие данные,
-     к которым нельзя получить доступ извне:
-     */
+   
 }
